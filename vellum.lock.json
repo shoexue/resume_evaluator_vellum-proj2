@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "workflows": [
+    {
+      "module": "router_classifier",
+      "workflow_sandbox_id": "19f0f4d0-b6d3-403f-9d8c-61ea697ff522",
+      "ignore": "sandbox.py",
+      "deployments": [],
+      "container_image_name": "python-workflow-runtime",
+      "container_image_tag": "latest",
+      "workspace": "default",
+      "target_directory": null
+    }
+  ],
+  "workspaces": []
+}
