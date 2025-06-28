@@ -6,4 +6,5 @@ The vellum workflow for the router classifier was used. The CLI tool was used to
 The router_classifier is an AI-powered workflow that analyzes job applications by taking a resume and job requirements as input. It works through a series of connected nodes: first, the EvaluateResume node analyzes whether the candidate meets the job criteria and routes them to either WriteNextRoundEmail (if they qualify) or WriteRejectionEmail (if they don't meet requirements). Finally, the FinalOutputEmailContent node formats the appropriate email response. The workflow uses Vellum's AI capabilities to automatically generate professional recruiter feedback emails, making the hiring process more efficient by providing instant, personalized responses to job applicants based on their qualifications.
 
 Here is a video demo
-https://github.com/user-attachments/assets/c60bf76e-d062-4ab0-9363-197daee4bd18
+
+https://github.com/user-attachments/assets/a3ee46c9-b2fa-416e-b071-92bd603ca4a7
