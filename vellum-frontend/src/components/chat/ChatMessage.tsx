@@ -7,17 +7,31 @@ interface ChatMessageProps {
 
 export function ChatMessage({ message, isUser }: ChatMessageProps) {
   return (
-    <Card className={`w-full ${isUser ? 'bg-blue-50' : 'bg-white'}`}>
-      <div className="p-4">
-        <div className={`text-sm ${isUser ? 'text-blue-800' : 'text-gray-800'}`}>
-          <span className="font-semibold">
-            {isUser ? 'Your Submission:' : 'Recruiter Feedback:'}
-          </span>
+    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
+      <Card className={`max-w-4xl ${isUser 
+        ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg' 
+        : 'bg-white border-2 border-slate-200 shadow-lg'
+      }`}>
+        <div className="p-6">
+          <div className={`flex items-center gap-2 mb-3 ${isUser ? 'text-blue-100' : 'text-slate-600'}`}>
+            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
+              isUser 
+                ? 'bg-white/20 text-white' 
+                : 'bg-gradient-to-r from-purple-500 to-blue-500 text-white'
+            }`}>
+              {isUser ? '👤' : '🤖'}
+            </div>
+            <span className="font-semibold">
+              {isUser ? 'Your Submission' : 'AI Recruiter Feedback'}
+            </span>
+          </div>
+          <div className={`whitespace-pre-wrap leading-relaxed ${
+            isUser ? 'text-white' : 'text-slate-800'
+          }`}>
+            {message}
+          </div>
         </div>
-        <div className={`mt-2 whitespace-pre-wrap ${isUser ? 'text-blue-900' : 'text-gray-900'}`}>
-          {message}
-        </div>
-      </div>
-    </Card>
+      </Card>
+    </div>
   )
 } 

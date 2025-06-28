@@ -30,8 +30,12 @@ runner.run()
 
 # Get the logs and extract the final output
 logs = log_buffer.getvalue()
-final_output_match = re.search(r'email_copy: (.*?)(?:\n|$)', logs)
+
+final_output_match = re.search(r'email_copy: (.*)', logs, re.DOTALL)
 if final_output_match:
+    print()
+    print("=== EXTRACTED EMAIL ===")
     print(final_output_match.group(1))
+    print("=== END EMAIL ===")
 else:
     print("No response generated")
