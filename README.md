@@ -69,7 +69,7 @@ Thanks to Vellum, I built a professional-quality AI workflow for resume analysis
 | **Python**             | Core programming language for backend logic and integration          |
 | **Vellum AI**          | Powers all intelligent workflows: resume evaluation, routing, and response generation |
 | **Vellum CLI**         | Pulls down declarative workflows directly into the Flask project     |
-| **REST API**           | Handles file input and communication between frontend/backend        |
+| **REST API**           | Handles input and communication between frontend/backend        |
 
 ### 🌐 Frontend
 
